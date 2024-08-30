@@ -16,7 +16,7 @@ Todas las preguntas son de tipo test. Cada respuesta tiene dos secciones, dividi
 1. La letra o letras correspondientes a las respuestas de la pregunta. 
 2. Razonamiento de la o las respuestas. 
 
-Ciertas preguntas carecen de la segunda sección, teniendo como solo como texto "Nada que comentar", porque la respuesta se ha considerado obvia. 
+Ciertas preguntas carecen de la segunda sección, teniendo solo como texto "Nada que comentar", porque la respuesta se ha considerado obvia. 
 
 <table>
   <tr><th scope="col" colspan="2">Ejemplos</th></tr>
