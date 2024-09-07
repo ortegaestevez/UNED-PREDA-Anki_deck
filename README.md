@@ -18,6 +18,7 @@ Mazo de la asignatura _Programación y estructuras de Datos avanzadas (PREDA)_ d
 #### Tabla de contenidos
 
 - [**Características**](#características)
+  - [**Estructura interna de las tarjetas**](#estructura-interna-de-las-tarjetas)
   - [**Desarrollo del proyecto**](#desarrollo-del-proyecto)
 - [**Usar el mazo**](#usar-el-mazo)
 - [**Referencias**](#referencias)
@@ -51,7 +52,12 @@ Ciertas preguntas carecen de la segunda sección, teniendo solo como texto "Nada
 
 ### Estructura interna de las tarjetas
 
-Anki permite varios tipos de notas. El mazo de este projecto solo está compuesto de notas tipo _Basic_. Cuando se crea una nota de este tipo, lo mínimo que necesita es introducir el texto de la pregunta en el apartado _front_ y el de la respuesta en el apartado _back_. Cuando se da a crear nota, se introduce en el mazo una única carta asociada a la nota. Para más información referente a los tipos de notas puedes consultar este [enlace](https://docs.ankiweb.net/getting-started.html#note-types).
+Anki permite varios tipos de notas. El mazo de este projecto solo se ha hecho conn notas de tipo _Basic_. Cuando se crea una nota de este tipo, lo mínimo que necesita es introducir el texto de la pregunta en el apartado _front_ y el de la respuesta en el apartado _back_. Cuando se da a crear nota, se introduce en el mazo una única carta asociada a la nota. 
+
+Cualquier tipo de nota incluye un campo adicional **Tags**. Debido a que en la [herramienta oficial de la asignatura](https://ineda.lsi.uned.es/recursos/self-assessment/PREDA/) se acceden a los ejercicios a través de los apartados _Ejercicios Teóricos_, _Prácticos_ o de _Coste_ las notas están etiquetadas como _Teoría_, _Práctica_ o _Costes_ dependiendo del apartado de la página donde se ha extraído el enunciado. En la práctica, los tags no se han encontrado muy útiles porque son muy generales. 
+
+Para más información referente a los tipos de notas puedes consultar este [enlace](https://docs.ankiweb.net/getting-started.html#note-types).<br><br>
+
 
 A cualquier tipo de nota se le pueden añadir más campos. Siguiendo las pautas dadas en el [vídeo]((https://www.youtube.com/watch?v=5vh_bWsztPc&t=145s)) usado como referencia para el proyecto (ver siguiente sección), las notas tienen un campos extra, el **ID**: es un número entero que identifica unívocamente cada tarjeta y que facilita muchísimo su búsqueda en la aplicación.
 
