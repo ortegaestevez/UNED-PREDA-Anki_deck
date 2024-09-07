@@ -1,5 +1,5 @@
 
-Mazo de la asignatura _Programación y estructuras de Datos avanzadas (PREDA)_ de la Universidad Nacional a Distancia Española UNED. Contiene 106 preguntas cuyo enunciado se ha cogido de una [herramienta de la asignatura](https://ineda.lsi.uned.es/recursos/self-assessment/PREDA/). Incluye preguntas sobre:
+Mazo de la asignatura _Programación y estructuras de Datos avanzadas (PREDA)_ de la Universidad Nacional a Distancia Española UNED. Contiene 106 preguntas cuyo enunciado se han cogido de esta [herramienta de la asignatura](https://ineda.lsi.uned.es/recursos/self-assessment/PREDA/). Las preguntas incluyen:
 
 - Grafos, con sus respectivas imágenes.
 - Pseudocódigo.
@@ -9,14 +9,19 @@ Mazo de la asignatura _Programación y estructuras de Datos avanzadas (PREDA)_ d
   - Métodos de hashing
   - Resolución de un problema con el esquema apropiado.
 
+:exclamation: **Este mazo no es oficial**; ha sido hecho por un alumno de la asignatura. Al igual que cualquier otro recurso, **está sujeto a fallos**.
+
+:star: En el apartado [Referencias](#referencias) puedes encontrar los recursos usados para hacer todo el proyecto además de otra página web con más preguntas test de la asignatura.
+
 ---
 
 #### Tabla de contenidos
 
-- [**Características**](#Características)
-  - [**Desarrollo del proyecto**](#Desarrollo-del-proyecto)
+- [**Características**](#características)
+  - [**Desarrollo del proyecto**](#desarrollo-del-proyecto)
 - [**Usar el mazo**](#usar-el-mazo)
-- [**Extensión del mazo**](#extension-del-mazo)
+- [**Referencias**](#referencias)
+  - [**Recursos adicionales**](#recursos-adicionales)
 
 ## Características
 
@@ -44,14 +49,19 @@ Ciertas preguntas carecen de la segunda sección, teniendo solo como texto "Nada
     <td><img src="docs/back-03.png"></td>
 </table>
 
-### Desarrollo del proyecto
+### Estructura interna de las tarjetas
 
+Anki permite varios tipos de notas. El mazo de este projecto solo está compuesto de notas tipo _Basic_. Cuando se crea una nota de este tipo, lo mínimo que necesita es introducir el texto de la pregunta en el apartado _front_ y el de la respuesta en el apartado _back_. Cuando se da a crear nota, se introduce en el mazo una única carta asociada a la nota. Para más información referente a los tipos de notas puedes consultar este [enlace](https://docs.ankiweb.net/getting-started.html#note-types).
+
+A cualquier tipo de nota se le pueden añadir más campos. Siguiendo las pautas dadas en el [vídeo]((https://www.youtube.com/watch?v=5vh_bWsztPc&t=145s)) usado como referencia para el proyecto (ver siguiente sección), las notas tienen un campos extra, el **ID**: es un número entero que identifica unívocamente cada tarjeta y que facilita muchísimo su búsqueda en la aplicación.
+
+### Desarrollo del proyecto
 
 El proceso que se ha seguido para la realización del mazo está inspirado en [este vídeo de Jake Romm](https://www.youtube.com/watch?v=5vh_bWsztPc&t=145s), donde cuenta:
 
 1. Como hacer un script .txt para automatizar el proceso de realización de las tarjetas en ChatGPT, teniendo que pasarle únicamente el texto del que se quiere hacer una tarjeta.
-2. Las respuestas de ChatGPT, se copian en una hoja de cálculo. El tipo de tarjeta usada es _Basic_ por lo que mínimo se necesita una columna para el campo _Front_ (pregunta) y otra para el _Back_ (respuesta). También se usa otra columna para asignar a cada tarjeta un identificador, de forma que sea más fácil encontrar una tarjeta concreta.
-3. La hoja de cálculo es exportada a Anki. En la [documentación oficial](https://docs.ankiweb.net/importing/intro.html) puedes encontrar más información al respecto. Básicamente consiste en pasar la hoja de cálculo a un .txt. El archivo **debe estár en UTF-8**.
+2. Las respuestas de ChatGPT, se copian en una hoja de cálculo. El tipo de tarjeta usada es _Basic_ por lo que mínimo se necesita una columna para el campo _Front_ (pregunta) y otra para el _Back_ (respuesta). También se usa otra columna para asignar a cada tarjeta un identificador, de forma que sea más fácil encontrar una tarjeta concreta. El documento [preda-deck.txt](docs/preda-deck.txt) muestra como queda la hoja de cálculo convertida a archivo de texto.
+3. La hoja de cálculo es exportada a Anki. En el [apartado importación, de la documentación oficial](https://docs.ankiweb.net/importing/intro.html) puedes encontrar más información al respecto. Básicamente consiste en pasar la hoja de cálculo a un .txt. El archivo **debe estár en UTF-8**.
 
 A partir de los scripts de muestra publicados en la [página web de Jake](https://thevitalcurriculum.super.site/1697e3f550934489b3b23ef29e278382), se hizo un [script](docs/formatting-instructions.md) adaptado para este proyecto, añadiendo las órdenes de formatear los enunciados con HTML y LaTeX. 
 
@@ -61,8 +71,13 @@ El modelo de ChatGPT que se ha usado en la mayor parte del proyecto a sido ChatG
 
 Solo tienes que descargar el **preda-deck.apkg** y ejecutarlo. Cuando Anki muestre la pantalla de opciones de importación, no necesitas hacer nada, solo darle a importar.
 
-## Extensión del mazo
+## Referencias
 
-Cada tarjeta, consta de Front, Back e ID; que corresponde a la pregunta, la respuesta y el identificador de la tarjeta, un número entero. Para añadir más preguntas puedes hacerlo en una hoja de cálculo como se explica en el apartado anterior o añadiéndolas directamente a Anki. 
+* **Herramienta OFICIAL de la asignatura**: https://ineda.lsi.uned.es/recursos/self-assessment/PREDA/. 
+* Vídeo usado para hacer el proyecto: https://www.youtube.com/watch?v=5vh_bWsztPc&t=145s.
+* Página donde se sacan los ejemplos de scripts: https://thevitalcurriculum.super.site/1697e3f550934489b3b23ef29e278382.
 
-El documento [preda-deck.txt](docs/preda-deck.txt) muestra como queda en un archivo de texto.
+### Recursos adicionales
+
+* **Más tests de esta asignatura (no oficial)**: https://www.daypo.com/buscar.php?t=PREDA.
+* Documentación de Anki: https://docs.ankiweb.net.
